@@ -52,11 +52,14 @@ to some common image format.
 # These file are taken from the root already
 rm -rf %{buildroot}%{_datadir}/doc/rawtherapee
 
+
 %files
-%doc AUTHORS.txt LICENSE.txt COMPILE.txt RELEASE_NOTES.txt
+%doc AUTHORS.txt LICENSE.txt RELEASE_NOTES.txt
 %{_bindir}/rawtherapee
 # %{_bindir}/camconst.json
+%{_bindir}/rawtherapee-cli
 %{_datadir}/rawtherapee
 %{_datadir}/applications/%{name}.desktop
+%{_datadir}/metainfo/%{name}.appdata.xml
 %{_iconsdir}/hicolor/*/apps/rawtherapee.png
 %{_mandir}/man1/%{name}.1*
